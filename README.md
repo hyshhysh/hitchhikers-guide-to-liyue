@@ -25,6 +25,6 @@ A travel guide of Liyue from the world of Genshin Impact, bringing the vibrant c
 This project is unofficial and fan-made. All rights for Genshin Impact belong to miHoYo and HoYoverse.  
 This project was made for educational and non-commercial purposes only.  
 
-Designed and coded by Josie Lim
-All image rights belong to their respective owners.
+Designed and coded by Josie Lim  
+All image rights belong to their respective owners.  
 Official Liyue OST rights belong to Genshin Impact/ miHoYo/ HoYoverse

@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Event Registration Form - Hitchhiker's Guide to Liyue</title>
+        <script>
+        function f1()
+            {
+            let f1 = confirm("Please make sure that all information has been entered correctly. Do you wish to proceed?")
+            if(f1)
+                {
+                    alert("Your registration has been submitted successfully!");
+                    window.open("regform_resp.html", "small", "width=600 height=300");
+                }
+            else
+                {
+                    alert("Please check your information again.")
+                }
+            }
+    
+        </script>-->
+        
+        <style>
+            
+            body
+            {
+                background-image: url(lantern_rite_bg2.png);
+                background-size: cover;
+            }
+            
+            #formcon
+            {
+                background-color: whitesmoke;
+                opacity: 0.65;
+                border: 2px solid #151523;
+                width: 50%;
+                height: auto;
+            }
+            
+            h1
+            {
+                font-family: "futura";
+                color: #151523;
+                letter-spacing: 1px;
+            }
+            
+            label
+            {
+                font-family: "futura";
+                color: #151523;
+                letter-spacing: 1px;
+                font-size: 10pt;
+            }
+            
+            fieldset
+            {
+                font-family: "baskerville";
+                text-align: left;
+                padding-left: 40px;
+                border: 0;
+                font-size: 12pt;
+            }
+            
+            option
+            {
+                font-family: "baskerville";
+                letter-spacing: 0.5px;
+            }
+            
+            em
+            {
+                color: darkorange
+            }
+            
+            option:hover
+            {
+                background-color: darkorange;
+            }
+            
+            
+            
+        </style>
+        
+    </head>
+    
+    <body>
+       
+       <div>
+           <center>
+               <div id="formcon">
+                   <h1>EVENT REGISTRATION</h1>
+                   <form onsubmit="f1()">
+                       <fieldset>
+                           <label>NAME</label><br>
+                           <input type=text size=35 required><em>*</em>
+                            <br><br>
+                           
+                           <label>AGE</label><br>
+                           <input type=number required><em>*</em>
+                           <br><br>
+            
+                           <label>GENDER</label><br>
+                           <input type=radio name="gender" >Male
+                           <input type=radio name="gender">Female
+                           <input type=radio name="gender">Prefer to not specify
+                           <br><br>
+                           
+                           <label>NATIONALITY</label><br>
+                           <input type=text size=35 >
+                            <br><br>
+                           
+                           <label>CONTACT NO.</label><br>
+                           <input type=text size=35 >
+                            <br><br>
+                           
+                           <label>SELECT EVENT</label><em>*</em><br>
+                           <select size=4 required>
+                            <option>-- Select event(s) --</option>
+                            <option>Radiant Sparks*</option>
+                            <option>Paper Theatre</option>
+                            <option>Iridescence Tour: Lantern Rite Grand Concert</option>
+                            </select>
+                            <br><br>
+                           
+                           <label>SELECT DATE</label><br>
+                           <input type=date>
+                           <br><br>
+                           
+                           <label>UPLOAD WIND GLIDING LICENSE</label>
+                           <br><small>*Required for "Radiant Sparks" event</small><br><br>
+                            <input type=file><br><br>
+                           
+                           <label>WHERE DID YOU HEAR ABOUT THE EVENT FROM?</label><br>
+                           <textarea rows=6 cols=60></textarea>
+                           
+                       </fieldset>
+                       <br>
+                
+                        <fieldset>
+                            <input type=checkbox required><label>I have read and understood all terms & conditions.</label><em>*</em>
+                            <br><br><br>
+                            <center>
+                            <button type="submit">Register</button>
+                            <input type=reset value="Clear All">
+                            <br><br><br>
+                            </center>
+                            
+                           </fieldset>
+                       
+                       
+                   </form>
+                </div>   
+               
+               
+           </center>    
+        </div>
+    
+    
+    </body>
+    
+    
+    
+</html>

@@ -1,0 +1,503 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Eat & Drink - Hitchhiker's Guide to Liyue</title>
+    
+        <style>
+            .hero
+            {
+                /*border: 2px solid red;*/
+                position: relative;
+                color: white;
+                font-family: "futura";
+                font-weight: bold;
+                letter-spacing: 1.5pt;
+            }
+            
+            .heroTitle 
+            {
+                /*border: 2px solid yellow;*/
+                font-size: 40pt;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .heroSubtext
+            {
+                font-family: "futura";
+                font-size: 13pt;
+                font-weight: bold;
+                letter-spacing: 1.5pt;
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        
+            .menuContainer
+            {
+                /*border: 2px solid blue;*/
+                padding: 1.5rem;
+                position: relative;
+            }
+            
+            .menu
+            {   
+                /*border: 2px solid green;*/
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                list-style-type: none;
+            }
+            
+            .menuItem
+            {
+                /*border: 2px solid blue;*/
+                width: 20%;
+                margin-bottom: 1rem;
+            }
+            
+            .menuItemText
+            {
+                font-family: "futura";
+                letter-spacing: 1.5px;
+                text-decoration-line: none;
+                color: #151523;
+            }
+            
+            .menuItemName
+            {
+                /*border: 2px solid red;*/
+                margin: 1rem;
+                font-size: 14px;
+                
+            }
+            
+            .menuItem:hover
+            {
+                border: 2px solid #151523;
+            }
+            
+            .contentHCon
+            {
+                /*border: 2px solid red;*/
+                padding: 3rem;
+                font-family: "futura";
+                color: #151523;
+                letter-spacing: 1.5px;
+            }
+            
+            .contentHeader
+            {
+                /*border: 2px solid yellow;*/
+                font-size: 30pt;
+            }
+            
+            .contentSubHeader, .restName
+            {
+                /*border: 2px solid yellow;*/
+                margin-top: -2rem;
+                font-family: "futura";
+                font-size: 19pt;
+            }
+            
+            .contentHeaderText
+            {
+                width: 65%;
+                font-family: "baskerville";
+                font-weight: normal;
+                font-size: 16pt;
+                font-weight: normal;
+                letter-spacing: 1px;
+            }
+            
+            .foodGrid
+            {
+                margin: auto;
+                width: 90%;
+                display: flex;
+                padding-bottom: 50px;
+            }
+            
+            .foodGridItem
+            {
+                float:left;
+                width: 50%;
+                padding: 5px;
+            }
+            
+            .foodDesc
+            {
+                font-family: "baskerville";
+                font-size: 12pt;
+                font-weight: normal;
+                letter-spacing: 1px;
+                color: #151523;
+                margin: 10px;
+                text-align: center;
+            }
+            
+            .jump
+            {
+                font-family: "futura";
+                letter-spacing: 1px;
+                font-size: 15pt;
+                color: darkorange;
+                text-decoration: none;
+            }
+            
+            .jump:hover
+            {
+                text-decoration-line: underline;
+            }
+            
+            h4
+            {
+                font-family: "futura";
+                letter-spacing: 1.5pt;
+                color: #151523;
+            }
+            
+            
+            
+            .restList
+            {
+                display: flex;
+                width: 65%;
+                margin:auto;
+            }
+            
+            .restdesc
+            {
+                font-family: "baskerville";
+                font-size: 16pt;
+                letter-spacing: 1px;
+                text-align: justify;   
+            }
+            
+            .restimg
+            {
+                float:left;
+                padding: 30px;
+            }
+            
+            
+        </style>
+    </head>
+    
+    <body bgcolor=white>
+        <main>
+            <div><!--MAIN DIV-->
+                <section class="hero">
+                    <img src="food_banner1.jpg" alt="Liyue Cuisine" style="width:100%;">
+                    <div>
+                        <h1 class=heroTitle>EAT & DRINK</h1>
+                    </div>
+                    <div>
+                        <h5 class=heroSubtext>FLAVOUR FIESTA</h5>
+                    </div>
+                </section>
+            
+                <center>
+                <section id="top" class=menuContainer>
+                    <ul class="menu"> <!--ROW 1-->
+                        <li class="menuItem"> <!--COL 1-->
+                            <article>
+                                <a class="menuItemText" href="#localdeli">
+                                    <img src="jueyun_chicken.jpg" alt="Jueyun Chili Chicken" width="200" height="200">
+                                    <p class="menuItemName">
+                                        LOCAL DELICACIES
+                                    </p>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="menuItem"> <!--COL 2-->
+                            <article>
+                                <a class="menuItemText" href="#toprest">
+                                    <img src="liuli_pavillion.jpg" alt="Liuli Pavillion" width="200" height="200">
+                                    <p class="menuItemName">
+                                        TOP PLACES
+                                    </p>
+                                </a>
+                            </article>
+                        </li>
+                    </ul>
+                    </section>
+                    
+                    <hr size 2px width=50% align=center>
+                    
+                    <section class="contentHCon">
+                        <h1 class="contentHeader" id="localdeli">LOCAL DELICACIES</h1>
+                        <h2 class="contentSubHeader">Bold. Exciting. Flavourful. Liyue cuisine.</h2>
+                        <p class="contentHeaderText">
+                            Liyue has two main culinary styles: the Li style, which focuses on bold, rich flavors using ingredients picked from the mountains, and the Yue style, which favors lighter-flavored seafood. The two styles have a long history in Liyue and have been locked in bitter rivalry for just as long; fans of one style often clash with fans of the other.
+                        </p>
+                    </section>
+                    
+                    <div class="foodGrid"><!--FOODGRID ROW 1-->
+                        <div class="foodGridItem"> <!--COL 1-->
+                            <img src="adeptus.jpg" alt="Adeptus' Temptation" width=300 height=200>
+                            <h4>ADEPTUS' TEMPTATION</h4>
+                            <p class="foodDesc">
+                                A complex, famous type of Liyue cuisine, in which specially selected ingredients are submerged and slowly bowled into soup stock. The recipe scribbled from memory alone was enough to urge the adepti to once again return to the world of men.
+                            </p>
+                        </div>
+                    
+                        <div class="foodGridItem"> <!--COL 2-->
+                            <img src="wanmin_boiled_fish.jpg" alt="Wanmin Restaurant Boiled Fish" width=300 height=200>
+                            <h4>BLACK-BACK PERCH STEW</h4>
+                            <p class="foodDesc">
+                                A poached fish dish. The fresh and tasty fish fillets are tender and juicy. The secret to this recipe is adding powdered Violetgrass into the heated oil to give the dish that aromatic scent. It's spicy, but not too spicy.
+                            </p>
+                        </div>
+                    
+                        <div class="foodGridItem"> <!--COL 3-->
+                            <img src="jade_parcels.jpg" alt="Jade Parcels" width=300 height=200>
+                            <h4>JADE PARCELS</h4>
+                            <p class="foodDesc">
+                                An exquisite-looking dish. The ham's sweetness is locked inside the fresh vegetables, drizzled with a spicy broth. Delicious is an understatement.
+                            </p>
+                        </div>
+                    
+                        <div class="foodGridItem"> <!--COL 4-->
+                            <img src="squirrel_fish.jpeg" alt="Squirrel Fish" width=300 height=200>
+                            <h4>SQUIRREL FISH</h4>
+                            <p class="foodDesc">
+                                A hard-to-prepare fish dish. The fish is first completely deboned before crisscross cuts are made on the skin. Coated in flour and deep-fried to a golden-brown color, then served with ketchup drizzled on top, it is tender and juicy on the inside and crispy on the outside.
+                            </p>
+                        </div>
+                   
+                    </div>
+                
+                    <div class="foodGrid"><!--FOODGRID ROW 2-->
+                        <div class="foodGridItem"> <!--COL 1-->
+                            <img src="tianshu_meat.jpeg" alt="Tianshu Meat" width=300 height=200>
+                            <h4>TIANSHU MEAT</h4>
+                            <p class="foodDesc">
+                                A braised meat dish. The cut of meat is a happy medium between lean and fatty, and has been braised to smoking perfection. The ingredients glisten, and are soft but not greasy. 
+                            </p>
+                        </div>
+                    
+                        <div class="foodGridItem"> <!--COL 2-->
+                            <img src="triple_layered_consomme.jpeg" alt="Triple Layered Consomme" width=300 height=200>
+                            <h4>TRIPLE LAYERED CONSOMME</h4>
+                            <p class="foodDesc">
+                                A neatly arranged dish. The ham, fowl, and bamboo shoots have been sliced into threads of equal length, and they've been laid out neatly in the soup bowl after being steamed at high heat, before being covered in consommé. The layers are distinct, and the mouthfeel is salty yet fresh.
+                            </p>
+                        </div>
+                    
+                        <div class="foodGridItem"> <!--COL 3-->
+                            <img src="universal_peace.jpg" alt="Universal Peace" width=300 height=200>
+                            <h4>UNIVERSAL PEACE</h4>
+                            <p class="foodDesc">
+                                Colorful staple food. Maintains perfect balance between soft and fragrant rice and all kinds of carefully selected sweet ingredients. This dish is mainly known for its meaning as a symbol of prosperity and peace, and less so for its taste.
+                            </p>
+                        </div>
+                    
+                        <div class="foodGridItem"> <!--COL 4-->
+                            <img src="jueyun_guoba.jpg" alt="Jueyun Guoba" width=300 height=200>
+                            <h4>JUEYUN GUOBA</h4>
+                            <p class="foodDesc">
+                                One of Liyue's specialty snacks. Stir-fried ham and Jueyun Chili sprinkled on a crispy crust made from Rice and Horsetail create a refined, meaty snack that transforms humble Rice into a hot delicacy.
+                            </p>
+                        </div>
+                   
+                    </div>
+                
+                    <div class="foodGrid"><!--FOODGRID ROW 3-->
+                        <div class="foodGridItem"> <!--COL 1-->
+                            <img src="bountiful_year.jpeg" alt="Bountiful Year" width=300 height=200>
+                            <h4>BOUNTIFUL YEAR</h4>
+                            <p class="foodDesc">
+                                Luxurious and exquisite raw fish. The fish is sliced thinly and arranged in the shape of a flower before a ring of side dishes is set all around it. The side dishes will be mixed with the raw fishbefore consumption — this act is said to ensure that the coming year will be smooth-sailing. 
+                            </p>
+                        </div>
+                    
+                        <div class="foodGridItem"> <!--COL 2-->
+                            <img src="lotus_flower_crisp.jpg" alt="Lotus Flower Crisp" width=300 height=200>
+                            <h4>LOTUS FLOWER CRISP</h4>
+                            <p class="foodDesc">
+                                One of Liyue's traditional snacks. Sweet stuffed lotus wrapped in a crispy, deep-fried crust. Its layers of flower petals unravel perfectly in the palm of your hand.
+                            </p>
+                        </div>
+                    
+                        <div class="foodGridItem"> <!--COL 3-->
+                            <img src="chicken_tofu_pudding.jpeg" alt="Chicken Tofu Pudding" width=300 height=200>
+                            <h4>CHICKEN TOFU PUDDING</h4>
+                            <p class="foodDesc">
+                                A dish made with great precision. The finely-diced chicken breast is stirred strongly and added into a soup that has various other minced meats within, before being cooked over a small flame. The result is light and elegant, and it tastes like tofu pudding. 
+                            </p>
+                        </div>
+                    
+                        <div class="foodGridItem"> <!--COL 4-->
+                            <img src="mora_meat.jpg" alt="Mora Meat" width=300 height=200>
+                            <h4>MORA MEAT</h4>
+                            <p class="foodDesc">
+                                A large hunk of minced meat packaged inside of a pastry. When you split the pastry in two, minced meat spills out. The taste of meat grease is all but gone, and the baking process has brought out the sweetness of the pastry.
+                            </p>
+                        </div>
+                   
+                    </div>
+                
+                    <div class="foodGrid"><!--FOODGRID ROW 4-->
+                        <div class="foodGridItem"> <!--COL 1-->
+                            <img src="stone_harbor_delicacies.jpeg" alt="Stone Harbor Delicacies" width=300 height=200>
+                            <h4>STONE HARBOR DELICACIES</h4>
+                            <p class="foodDesc">
+                                Wok-fried vegetarian food. A stir-fried selection of three ingredients hailing from Liyue. Though the methodology is simple, it brings out the intense, innate flavors of the ingredients, and does not fade in brilliance when compared to some high-class delicacy.
+                            </p>
+                        </div>
+                    
+                        <div class="foodGridItem"> <!--COL 2-->
+                            <img src="come_and_get_it.jpg" alt="Come And Get It" width=300 height=200>
+                            <h4>COME AND GET IT</h4>
+                            <p class="foodDesc">
+                                A dish made out of a luxurious variety of ingredients. There is no great refinement in the making of this food, and it appears in Liyue often during festival season. Whenever this dish is served up, the person at the head of the table will invite everyone to dig in, saying "Come on, eat, eat," hence the name.
+                            </p>
+                        </div>
+                    
+                        <div class="foodGridItem"> <!--COL 3-->
+                            <img src="crab_roe_tofu.jpg" alt="Crab Roe Tofu" width=300 height=200>
+                            <h4>CRAB ROE TOFU</h4>
+                            <p class="foodDesc">
+                                A dish with a tender mouthfeel. Crab roe is stir-fried till the oil within oozes out before being added to boiled tofu and accented with broth. Simple, yes, but gloriously fresh.
+                            </p>
+                        </div>
+                    
+                        <div class="foodGridItem"> <!--COL 4-->
+                            <img src="golden_shrimp_balls.jpg" alt="Golden Shrimp Balls" width=300 height=200>
+                            <h4>GOLDEN SHRIMP BALLS</h4>
+                            <p class="foodDesc">
+                                A deep-fried shrimp dish. The aroma assaults your senses, while the crispy potatoes bring out the light sweetness of the shrimp meat. This, in tandem with its cute, small shape, makes it very enticing indeed.
+                            </p>
+                        </div>
+                   
+                    </div>
+                    
+                    <br><br>
+                    <a class="jump" href="#top">BACK TO TOP</a>
+                    <br><br><br>
+                
+                <hr size 2px width=50% align=center>
+                <br>
+                
+                <section class="contentHCon">
+                        <h1 class="contentHeader" id="toprest">TOP PLACES</h1>
+                        <h2 class="contentSubHeader">The best food places in Liyue.</h2>
+                    </section>
+                <br><br>    
+                <div class=restList>
+                    <article>
+                    <h2 class="restName" align="left">1. WANMIN RESTAURANT</h2>
+                        <p class="restdesc">
+                            A famous restaurant known in Chihu Rock. Some say that the goal of this restaurant is to keep everyone on earth well fed, while others believe that it strives to unify all the regional cuisines of the world. Either way, with its unique dishes, Wanmin Restaurant is surely a place worth visiting. If you really don't have time, why not grab some takeout?
+                        </p>
+                        <img class="restimg" src="dragon_beard_noodles.jpg" alt="Dragon Beard Noodles" width=220 height=264>
+                            <br>
+                            <h4 align="left">SPECIALTIES:</h4>
+                        <p class="restdesc">
+                            Wanmin Restaurant's Boiled Fish<br>
+                            Squirrel Fish<br>
+                            Dragon Beard Noodles <small>(featured)</small><br>
+                            <br>
+                            <h4 align="left">LOCATION:</h4>
+                        <p class="restdesc">
+                            23 Chihu Rock, Liyue Harbour, Sea of Clouds, Liyue
+                            <br>
+                        </p>
+                    <br><br><br><br><br><br><br><br>
+                        
+                    <h2 class="restName" align="left">2. LIULI PAVILION</h2>
+                        <p class="restdesc">
+                            Liuli Pavilion literally "Glaze Pavilion" is the leading establishment for Li-style cuisine in Liyue. The Li-style focuses on bold, rich flavors using ingredients picked from the mountains, promising to fill your senses with the freshest, earthy flavors.
+                        </p>
+                        <img class="restimg" src="cured_pork_pot.jpg" alt="Cured Pork Dry Hotpot" width=220 height=264>
+                        <br>
+                            <h4 align="left">SPECIALTIES:</h4>
+                        <p class="restdesc">
+                            Stone Harbor Delicacies<br>
+                            Noodles with Mountain Delicacies<br>
+                            Cured Pork Dry Hotpot <small>(featured)</small><br>
+                            Tianshu Meat<br>
+                            <br>
+                            <h4 align="left">LOCATION:</h4>
+                        <p class="restdesc">
+                            100 Feiyun Slope, Liyue Harbour, Sea of Clouds, Liyue
+                            <br>
+                        </p>
+                    <br><br><br><br><br><br><br><br>
+                        
+                    <h2 class="restName" align="left">3. XINYUE KIOSK</h2>
+                        <p class="restdesc">
+                            Xinyue Kiosk is renowned as the most authentic restaurant for Yue cuisine, just as Liuli Pavilion is to Li cuisine. As a result, Xinyue Kiosk's dishes are primarily seafood based, which is Yue cuisine's specialty.<br>
+                            Due to its high reputation, Xinyue Kiosk is rather expensive to dine at and has a three-month waitlist.
+                        </p>
+                        <img class="restimg" src="golden_crab.jpg" alt="Golden Crab" width=220 height=264>
+                        <br>
+                            <h4 align="left">SPECIALTIES:</h4>
+                        <p class="restdesc">
+                            Golden Crab <small>(featured)</small><br>
+                            Golden Shrimp Balls<br>
+                            Fullmoon Egg<br>
+                            Stir-Fried Fish Noodles<br>
+                            <br>
+                            <h4 align="left">LOCATION:</h4>
+                        <p class="restdesc">
+                            102 Feiyun Slope, Liyue Harbour, Sea of Clouds, Liyue
+                            <br>
+                        </p>
+                    <br><br><br><br><br><br><br><br>
+                        
+                    <h2 class="restName" align="left">4. WANGSHU INN</h2>
+                        <p class="restdesc">
+                            A landmark within Dihua Marsh, built upon a massive stone pillar.
+                            As most of the patrons that stop here are traveling merchants, the inn provides an area for them to trade and set up stalls. Even though it is primarily an inn, it is the only place in the entire Liyue where Almond Tofu can be found. Said to be the favourite of an adeptus, it has a silky-smooth texture with a long-lasting aroma of almond. A must-try if you are in the area.
+                        </p>
+                        <img class="restimg" src="almond_tofu.jpg" alt="Almond Tofu" width=220 height=264>
+                        <br>
+                            <h4 align="left">SPECIALTIES:</h4>
+                        <p class="restdesc">
+                            Almond Tofu <small>(featured)</small><br>
+                            Matsutake Meat Rolls<br>
+                            Jueyun Chili Chicken<br>
+                            <br>
+                            <h4 align="left">LOCATION:</h4>
+                        <p class="restdesc">
+                            1 Bishui Plain, Liyue
+                            <br>
+                        </p>
+                        <br><br><br><br><br><br><br><br>
+                        
+                        <h2 class="restName" align="left">5. EMERALD MAPLE INN</h2>
+                        <p class="restdesc">
+                            Another inn on this list, this one offers too, a great view as it overlooks Luhua Pool. Due to its relatively remote location, it's a great place to sit down and have a cup of hot Liyue specialty tea in the midst of your travels. The inn also serve some homecooked local dishes to recharge your energy.
+                        </p>
+                        <img class="restimg" src="pops_tea.jpg" alt="Pop's Tea" width=220 height=264>
+                        <br>
+                            <h4 align="left">SPECIALTIES:</h4>
+                        <p class="restdesc">
+                            Pop's Tea <small>(featured)</small><br>
+                            Mora Meat<br>
+                            Stir-fried Filet<br>
+                            <br>
+                            <h4 align="left">LOCATION:</h4>
+                        <p class="restdesc">
+                            2 Luhua Pool, Qiongji Estuary, Liyue
+                            <br>
+                        </p>
+                        <br><br><br><br>
+                    </article>
+                </div>
+                <br><br>
+                    <a class="jump" href="#top">BACK TO TOP</a>
+                <br><br><br>
+               
+            </center>
+        
+        </div>
+        </main>
+    </body>
+</html>

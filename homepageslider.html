@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <body onload="changeImage()">
+    
+        <script>
+            var count = 0;
+            var image = []; //array to store images
+            
+            image[0] = "slide_10.jpg";
+            image[1] = "slide_2.jpg";
+            image[2] = "slide_3.jpg";
+            image[3] = "slide_4.jpg";
+            image[4] = "slide_5.jpg";
+            image[5] = "slide_6.jpg";
+            image[6] = "slide_7.jpg";
+            image[7] = "slide_8.jpg";
+            image[8] = "slide_9.jpg";
+            image[9] = "slide_1.jpg";
+            image[10] = "slide_11.jpg";
+            image[11] = "slide_12.jpg";
+            image[12] = "slide_10.jpg";
+            image[13] = "slide_10.jpg";
+            image[14] = "slide_10.jpg";
+            image[15] = "slide_10.jpg";
+            image[16] = "slide_10.jpg";
+            image[17] = "slide_10.jpg";
+            image[18] = "slide_10.jpg";
+            image[19] = "slide_10.jpg";
+            image[20] = "slide_10.jpg";
+            
+                function changeImage()
+            {
+                document.display.src = image[count];
+                //image.length() will take all image slots
+                if(count<image.length-1)//loop
+                    {
+                        count++;
+                    }
+                else
+                    {
+                        count = 0;
+                    }
+                setTimeout("changeImage()", 200);
+            }
+        
+        </script>
+    
+        <center>
+            <img name = "display" height="630" width="100%">
+        </center>
+    
+    </body>
+</html>

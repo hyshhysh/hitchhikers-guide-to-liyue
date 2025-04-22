@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Things to Do - Hitchhiker's Guide to Liyue</title>
+        
+        <style>
+        .hero
+            {
+                /*border: 2px solid red;*/
+                position: relative;
+                color: white;
+                font-family: "futura";
+                font-weight: bold;
+                letter-spacing: 1.5pt;
+            }
+            
+            .heroTitle 
+            {
+                /*border: 2px solid yellow;*/
+                font-size: 40pt;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .heroSubtext
+            {
+                font-family: "futura";
+                font-size: 13pt;
+                font-weight: bold;
+                letter-spacing: 1.5pt;
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .menuContainer
+            {
+                /*border: 2px solid red;*/
+                padding: 1rem;
+                padding-bottom: 1.5rem;
+                position: relative;
+            }
+            
+            .menu
+            {   
+                /*border: 2px solid green;*/
+                margin-bottom: -1rem;
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                list-style-type: none;
+            }
+            
+            .menuItem
+            {
+                /*border: 2px solid blue;*/
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                width: 40%;
+                margin-bottom: 1rem;
+            }
+            
+            .menuItemText
+            {
+                font-family: "futura";
+                letter-spacing: 1.5px;
+                text-align: center;
+                text-decoration-line: none;
+                color: #151523;
+            }
+            
+            .menuItemNameL
+            {
+                /*border: 2px solid red;*/
+                margin: 0;
+                font-size: 32px;
+                font-weight: bold;
+                color: whitesmoke;
+                position: absolute;
+                top: 25%;
+                left: 32%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .menuItemNameR
+            {
+                /*border: 2px solid red;*/
+                margin: 0;
+                font-size: 32px;
+                font-weight: bold;
+                color: whitesmoke;
+                position: absolute;
+                top: 25%;
+                left: 71%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .menuItemNameL2
+            {
+                /*border: 2px solid red;*/
+                margin: 0;
+                font-size: 32px;
+                font-weight: bold;
+                color: whitesmoke;
+                position: absolute;
+                top: 72%;
+                left: 32%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .menuItemNameR2
+            {
+                /*border: 2px solid red;*/
+                margin: 0;
+                font-size: 32px;
+                font-weight: bold;
+                color: whitesmoke;
+                position: absolute;
+                top: 72%;
+                left: 71%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .menuItemNameL:hover, .menuItemNameL2:hover, .menuItemNameR:hover, .menuItemNameR2:hover
+            {
+                font-size: 34px;
+            }
+            
+            .AllContent
+            {
+                /*border: 2px solid red;*/
+                padding: 3rem; 
+            }
+            
+            .contentContainer
+            {
+                /*border: 2px solid purple;*/
+                margin-left: 3rem;
+                margin-right: 3rem; 
+                padding: 3rem;
+            }
+            
+            .contentName, .contentNameSubtext, .suggests, .contentList
+            {
+                /*border: 2px solid green;*/
+                margin: auto;
+                font-family: "futura";
+                font-size: 40px;
+                letter-spacing: 1.5px;
+                text-align: center;
+            }
+            
+            .contentNameSubtext
+            {
+                font-size: 16pt;
+            }
+            
+            .suggests
+            {
+                margin: 2rem;
+                text-align: left;
+                font-family: "futura";
+                font-size: 18px;
+                letter-spacing: 1.5px;
+            }
+            
+            .contentList
+            {
+                font-size: 30px;
+            }
+            
+            .contentText
+            {
+                /*border: 2px solid blue;*/
+                margin: 1rem;
+                font-family: "baskerville";
+                font-size: 18pt;
+                letter-spacing: 1px;
+                text-align: justify;
+            }
+            
+            .jumpLink
+            {
+                font-family: "futura";
+                font-size: 13pt;
+                letter-spacing: 1px;
+                text-decoration: none;
+            }
+            
+            .jumpLink:hover
+            {
+                text-decoration-line: underline;
+            }
+            
+            a
+            {
+                color: darkorange;
+            }
+        
+        
+        </style>
+    </head>
+    
+    <body bgcolor="white">
+        <main><!--MAIN DIV-->
+            <section class="hero">
+                    <img src="thingstodo_banner.jpg" alt="Liyue Opera" style="width:100%;">
+                    <div>
+                        <h1 class=heroTitle>THINGS TO DO</h1>
+                    </div>
+                    <div>
+                        <h5 class=heroSubtext>EXTRAORDINARY INFINITE</h5>
+                    </div>
+                </section>
+            
+            <center>
+            <section id="top" class=menuContainer>
+                <ul class="menu"> <!--ROW 1-->
+                    <li class="menuItem"> <!--COL 1-->
+                        <article>
+                            <a class="menuItemText" href="#adventure">
+                                <img src="adventurers_icon.jpg" alt="Sunset at the Chasm" width="500 " height="250">
+                                <p class="menuItemNameL">
+                                    ADVENTURERS
+                                </p>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="menuItem"> <!--COL 2-->
+                        <article>
+                            <a class="menuItemText" href="#culture">
+                                <img src="culturebuffs_icon.jpg" alt="Liyue Teahouse Interior" width="500 " height="250">
+                                <p class="menuItemNameR">
+                                    CULTURE BUFFS
+                                </p>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+                
+                <ul id="top" class="menu"> <!--ROW 1-->
+                    <li class="menuItem"> <!--COL 1-->
+                        <article>
+                            <a class="menuItemText" href="#shoppers">
+                                <img src="shopa_icon.jpg" alt="Antique Shop" width="500 " height="250">
+                                <p class="menuItemNameL2">
+                                    SHOPAHOLICS
+                                </p>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="menuItem"> <!--COL 2-->
+                        <article>
+                            <a class="menuItemText" href="#sights">
+                                <img src="sightseekers_icon.jpg" alt="Liyue Teahouse Interior" width="500 " height="250">
+                                <p class="menuItemNameR2">
+                                    SIGHT-SEEKERS
+                                </p>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+                
+                <br>
+                    <hr size=2px width=65% align=center>
+                
+                <section class="AllContent"> <!--ALL MENU ITEM CONTENT-->
+                    <div class="contentContainer" id="adventure">
+                        <p class="contentNameSubtext">
+                            Excitement and thrills for..
+                        </p>
+                        <h1 class="contentName">ADVENTURERS</h1>
+                        <br>
+                        <article>
+                            <h4 class="suggests">SUGGESTED ITINERARIES:</h4>
+                            <h5 class="contentList">1. EXPLORE THE CHASM</h5>
+                            <p class=contentText>
+                                According to legend, the Chasm was formed by a falling star somewhere around 6000 years ago. Due to special geological conditions, possibly as a result of the meteorite, the soil and vegetation in the area has a distinctive color, while unique fluorescent plants have thrived inside.
+                                <br><br>
+                                Only the outside of the Chasm is accessible to the public, namely Cinnabar Cliff and Fuao Vale. The rocky, angle sloped terrains are difficult to navigate, making the hike extremely challenging. However, the views that awaits you at the top is well worth the climb.
+                            </p>
+                            <img src="thechasm_2.jpg" alt="The Chasm" width=600 height=300>
+                            <br><br><br><br><br><br>
+                            
+                            <h5 class="contentList">2. TEST YOUR COURAGE AT WUWANG HILL</h5>
+                            <p class=contentText>
+                                Hiding between the jagged peaks in the north of Mt. Qingce is a slope known as Wuwang Hill, a palpably ominous place and the setting of many tales of supernatural phenomena. Known for its eerie atmosphere, as the skies will always be dark gray regardless of whether it is daytime or nighttime. There is a deserted and ruined village in the area, and forests contains ghost lights that float around.
+                                <br><br>
+                                It is rumored by Liyue that the spirits of the dead lurk within the woods on Wuwang Hill. They roam the perimeter of the decrepit village, eternally yearning for things left unresolved in living years. Regardless of the myths and legends surrounding the area, Wuwang Hill is a gorgeous dark forest, visit if you dare.
+                            </p>
+                            <img src="wuwang_hill1.jpg" alt="Wuwang Hill" width=600 height=300>
+                            <br><br><br><br><br><br>
+                            
+                            <h5 class="contentList">3. WIND GLIDE DOWN QINGYUN PEAK</h5>
+                            <p class=contentText>
+                                Said to the the abode of adeptus Moon Carver, Qingyun Peak is the highest point in Liyue. A meandering mountain road, and several anemo drafts will take you up the mountain, shortening the time it will take to climb to the top. At the peak, you will find a Qingxin garden, as well as one of the Three Divine Birds Statue.
+                                <br><br>
+                                The Mist-Veiled Viewpoint offers you a three hundred and sixty degrees bird's eye view of the surrounding Huagang Stone Forest and Jueyun Karst. The rest of Liyue is however, obscured by the mist - yet that is the beauty of it. Affix your Wind Glider, take a leap and soar amongst the majestic stone peaks, sink through the mist, and the vast entirety of Liyue will slowly appear right below you.
+                            </p>
+                            <img src="huagang_9.jpg" alt="Huagang Stone Forest" width=600 height=300>
+                            <br><br><br><br><br><br>
+                            
+                            <a class="jumpLink" href="#top">BACK TO TOP</a>
+                            <br><br><br>
+                            <hr size=2px width=65% align=center>
+                            
+                        </article>
+                    </div>
+                    
+                    <div class="contentContainer" id="culture">
+                        <p class="contentNameSubtext">
+                            Arts and senses for..
+                        </p>
+                        <h1 class="contentName">CULTURE BUFFS</h1>
+                        <br>
+                        <article>
+                            <h4 class="suggests">SUGGESTED ITINERARIES:</h4>
+                            <h5 class="contentList">1. CATCH A LIYUE OPERA</h5>
+                            <p class=contentText>
+                                Liyue opera is one of the most influential performance art in Teyvat. Incorporating singing, reciting, acting, martial arts, hey tell stories of history, politics, society and daily life and aspire to inform as they entertain, and its librettos are composed according to a strict set of rules that prize form and rhyme.
+                                <br><br>
+                                Liyue opera performances can be easily found in Liyue Harbour. One of the most famous Liyue opera troupe is Yun-Han Opera Troupe, who currently performs at Heyu Tea House. You can arrive at the opera house earlier and go to the backstage to see how the performers get dressed and color their faces.
+                            </p>
+                            <img src="liyue_opera5.jpg" alt="Liyue Opera" width=600 height=300>
+                            <br><br><br><br><br><br>
+                            
+                            <h5 class="contentList">2. SIP TEA & LISTEN  TO STORIES</h5>
+                            <p class=contentText>
+                                One of the unique features in Liyue is the many, many teahouses. Teahouses are not only a place to enjoy excellent tea, but also a place for entertainment, as most teahouses holds folk art performances, like Liyue Opera and storytelling performances.
+                                <br><br>
+                                Heyu Teahouse in Liyue Harbour is the most famous teahouses in Liyue, as they host the distinguished Yun-Han Opera Troupe, and Tea Master Liu Su who makes exquisite Liyue tea and tell wonderful stories. Close behind is Third-Round Knockout, which hosts Liu Su's equally skillful junior, Iron Tongue Tian. Also notable is Pop's Teas - although there are no professional storytellers at this humble teahouse, Pops Kai will marvel you with stories of his own experiences.
+                            </p>
+                            <img src="teahouse_2.jpg" alt="Teahouse Interior" width=600 height=300>
+                            <br><br><br><br><br><br>
+                            
+                            <h5 class="contentList">3. DO SOME ART & CRAFT</h5>
+                            <p class=contentText>
+                                Liyue people are keen artists and craftsmen - everybody has mastered their crafts personally before they started their trade, even for major businesses. The hands on approach is what makes Liyue products so high quality and sought after throughout Teyvat.
+                                <br><br>
+                                At Scent of Spring, you can learn perfume making, and you can even bring your own ingredients and they will show you how to make it into a lovely perfume. If you are planning on visiting Luhua Pool, be sure to stop by Vermeer's Paintings where you will be able to learn how to paint right at the edge of the scenic pools. You can learn also pick up the trade of the famous Fanmu Carpenters, makers of intricate handmade Liyue-style hardwood furniture.
+                            </p>
+                            <img src="fanmu_carpenters.jpg" alt="Fanmu Carpenters" width=600 height=300>
+                            <br><br><br><br><br><br>
+                            
+                            <a class="jumpLink" href="#top">BACK TO TOP</a>
+                            <br><br><br>
+                            <hr size=2px width=65% align=center>
+                            
+                        </article>
+                    </div>
+                        
+                            
+                        <div class="contentContainer" id="shoppers">
+                        <p class="contentNameSubtext">
+                            Novelties and knickknacks for..
+                        </p>
+                        <h1 class="contentName">SHOPAHOLICS</h1>
+                        <br>
+                        <article>
+                            <h4 class="suggests">SUGGESTED ITINERARIES:</h4>
+                            <h5 class="contentList">1. ADD TO YOUR BOOKSHELF</h5>
+                            <p class=contentText>
+                                One of the major literary heritages of the Teyvat, with an uninterrupted history of more than 3,000 years, Liyue literature includes lyric poetry, historical and didactic writing, drama, and various forms of fiction. Stories being the life and breath of Liyue, the people are well-read in all forms of literature. In recent years, light novels and martial arts collections are especially popular.
+                                <br><br>
+                                At Wanwen Bookstore is where you will be able to find books of all genres, classic and modern. They also carry guidebooks for your travels, notably "Totally Unbiased Food Guide to Teyvat" by Freki & Geri, as well as "Teyvat Travel Guide" published by the Adventurers' Guild. If you are lucky, you can also pick up a rare copy of "A Legend of Sword" by Zhenyu.
+                            </p>
+                            <img src="wanwen_bookstore.jpg" alt="Wanwen Bookstore" width=600 height=300>
+                            <br><br><br><br><br><br>
+                            
+                            <h5 class="contentList">2. DIVE INTO THE SHOPPING DISTRICT</h5>
+                            <p class=contentText>
+                                Liyue is a fantastic shopping destination.From the roadside stall to the large-scale shops, from the common store to a popular market, Liyue has numerous perfect places to shop that can satisfy all shoppers' desires. From antique tea sets to rare gems, whatever your interest, you're bound to be able to find it in Liyue.
+                                <br><br>
+                                There's a special little toy store around the corner of the street in Chihu Rock, which is the only place in the entire Teyvat that handmakes and sells the Floral Zither. They are also the only place in Liyue where you can purchase fireworks. The shopping district of Liyue Harbour, Feiyun slope is where you will find Xigu Antiques, Mingxing Jewelry and Wanyou boutique. Visit the Bubu Pharmacy to stock up on Liyue herbs and mysticas.
+                            </p>
+                            <img src="liyue_harbour_4.jpg" alt="Liyue Harbour Shopping District" width=600 height=300>
+                            <br><br><br><br><br><br>
+                            
+                            <a class="jumpLink" href="#top">BACK TO TOP</a>
+                            <br><br><br>
+                            <hr size=2px width=65% align=center>
+                            
+                            </article>
+                    </div>
+                            
+                        <div class="contentContainer" id="sights">
+                        <p class="contentNameSubtext">
+                            Picturesque and breathtaking for..
+                        </p>
+                        <h1 class="contentName">SIGHT-SEEKERS</h1>
+                        <br>
+                        <article>
+                            <h4 class="suggests">SUGGESTED ITINERARIES:</h4>
+                            <h5 class="contentList">1. BREATHTAKING VIEWS FROM WANGSHU INN</h5>
+                            <p class=contentText>
+                                A landmark within Dihua Marsh, built upon a massive stone pillar. As most of the patrons that stop here are traveling merchants, the inn provides an area for them to trade and set up stalls. Legend amongst the stalls says that the tower of the inn hides a mysterious secret, but that's as far as the legend goes, as no-one has ever been able to validify the claims.
+                                <br><br>
+                                Climb all the way up to the top floor viewing deck for a jaw-dropping view of the surrounding scenery — weather permitting you can see all the way to Mt. Qingce and Jueyun Karst in the distance. On clear days you can even see the Jade Chamber, and also as far as Dragonspine all the way in Mondstadt!
+                            </p>
+                            <img src="wangshu_inn_1.jpeg" alt="Wangshu Inn" width=600 height=300>
+                            <br><br><br><br><br><br>
+                            
+                            <h5 class="contentList">2. MARVEL AT THE PILLARS ON CUIJIE SLOPE</h5>
+                            <p class=contentText>
+                                Located within the heart of the region are the Nine Pillars and a temple to the center. Nine shackles of stone were said to have been laid down deep in the valleys of Cuijue Slope to drive off evil and cleanse the world. Archaeologically, Cuijue Slope is rather unique from other regions of Liyue. The entrance to the shrine is built in a style and its door features an insignia seen nowhere else. Little to no information exists on the pillars even in Liyue folklore either.
+                                <br><br>
+                                When you enter the vicinity of the pillars, the sky will suddenly turn dark and gray, and areas outside Cuijue Slope will have an unnaturally dark appearance to them. This visual effect will persist until you reach a certain range from the area. This phenomenon is a once in a lifetime view that you absolutely must partake in.
+                            </p>
+                            <img src="cuijue_slope.jpg" alt="Cuijue Slope" width=600 height=300>
+                            <br><br><br><br><br><br>
+                            
+                            <h5 class="contentList">3. TAKE SUNSET PHOTOS AT YAOGUANG SHOAL</h5>
+                            <p class=contentText>
+                                Yaoguang Shoal is named as such in the local language because of its shallow waters and bioluminescent sea creatures that used to appear after dusk, like stars that had fallen into the sea swimming to shore. 
+                                <br><br>
+                                On the edge of the waters is the famous Elephant Trunk Rock Formation. The rock formation looks like a giant elephant drinking water from the river. Visit during the evening to catch the stunning sunset in the backdrop, and stay till the night for the bright lights that will adorn the surrounding areas.
+                            </p>
+                            <img src="yaoguang_shoal.jpg" alt="Yaoguang Shoal" width=600 height=300>
+                            <br><br><br><br><br><br>
+                            
+                            <a class="jumpLink" href="#top">BACK TO TOP</a>
+                            
+                        </article>
+                    </div>
+                    
+                   </section>
+            </center>
+        </main>
+    </body>
+</html>

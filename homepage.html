@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Hitchhiker's Guide to Liyue</title>
+            <style>
+            
+            #headerDiv
+            {
+                /*border: 2px solid red;*/
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                display: flex;
+                padding-right: 1.5rem;
+                padding-left: 1.5rem;
+                width: auto;
+            }
+            
+            #webLogo
+            {
+                /*border: 2px solid purple;*/
+                height: 4rem;
+                float: left;
+                margin: 0px;
+                display: flex;
+            }
+            
+            #navBar
+            {
+                /*border: 2px solid blue;*/
+                margin-left: auto;
+            }
+            
+            .navItem
+            {
+                /*border: 2px solid yellow;*/
+                padding: 0.5rem;
+                font-size: 12px;
+                font-family: "futura";
+                color: #151523;
+                font-weight: bold;
+                letter-spacing: 1.5px;
+                text-decoration: none;
+            }
+            
+            .navItem:hover
+            {
+                font-size: 13px;
+                text-decoration: overline;
+                text-decoration-style: solid;
+                text-decoration-color: darkorange;
+            }
+            
+            .footerDiv
+            {
+                /*border-top: 2px solid #151523;*/
+                width: 100%;
+                height: 60px;
+            }
+            
+            #footerText
+            {
+                font-family: "futura";
+                color: #151523;
+                font-size: 10pt;
+                letter-spacing: 1.5pt;
+                padding-left: 50px;
+            }
+            
+            
+            #copyright
+            {
+                float: right;
+                padding-right: 50px;
+            }
+           
+        </style>
+        
+    </head>
+    
+    <body bgcolor="whitesmoke">
+        
+        <header>
+            <a href ="homepageslider.html" target="pages"> <!--WEBSITE LOGO-->
+                    <img id="webLogo" src="website_logo%20(1).png" alt="HGTL Logo">
+                    </a>
+            <div id="headerDiv"> <!--HEADER DIV-->
+                <nav id="navBar"> <!-- NAV BAR-->
+                    <a class="navItem" href="destinations.html" target="pages">DESTINATIONS</a>
+                    <a class="navItem" href="thingstodo.html" target="pages">THINGS TO DO</a>
+                    <a class="navItem" href="eat&drink.html" target="pages">EAT & DRINK</a>
+                    <a class="navItem" href="events&festivals.html" target="pages">EVENTS & FESTIVALS</a>
+                    <a class="navItem" href="handbook.html" target="pages">HANDBOOK</a>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <div id="bodyDiv"> <!--MAIN BODY DIV-->
+                <center>
+                <article id="mainiFrame">
+                    <iframe style="border:0;" width=100% height=650px name="pages" src="homepageslider.html">
+                    </iframe>
+                </article>
+                </center>
+            </div>
+        </main>
+            
+        <footer>
+            <div class="footerDiv">
+                <article id="footerText">
+                    
+                    <audio title="The Official Liyue Music" controls loop autoplay>
+                    <source src="OST-Liyue.mp3" type=audio/mp3>
+                    </audio>
+                    <div id="copyright">
+                    <b>Copyright© LYTO, HGTT 2023</b></div>
+                </article>
+            </div>  
+        </footer>
+        
+    </body>
+</html>
+

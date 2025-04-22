@@ -1,0 +1,542 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Destinations - Hitchhiker's Guide to Liyue</title>
+    
+        <style>
+            .hero
+            {
+                /*border: 2px solid red;*/
+                position: relative;
+                color: white;
+                font-family: "futura";
+                font-weight: bold;
+                letter-spacing: 1.5pt;
+            }
+            
+            .heroTitle 
+            {
+                /*border: 2px solid yellow;*/
+                font-size: 40pt;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .heroSubtext
+            {
+                font-family: "futura";
+                font-size: 13pt;
+                font-weight: bold;
+                letter-spacing: 1.5pt;
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .menuContainer
+            {
+                /*border: 2px solid red;*/
+                padding-bottom: 1.5rem;
+                position: relative;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+            
+            .menu
+            {   
+                /*border: 2px solid green;*/
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                list-style-type: none;
+            }
+            
+            .menuItem
+            {
+                /*border: 2px solid blue;*/
+                padding: 1rem;
+                width: 20%;
+                margin-bottom: 1rem;
+            }
+            
+            .menuItemText
+            {
+                font-family: "futura";
+                letter-spacing: 1.5px;
+                text-decoration-line: none;
+                color: #151523;
+            }
+            
+            .menuItemSubText
+            {
+                margin: 0;
+                padding-top: 0.5rem;
+                font-size: 8pt;
+                opacity: 0.7;
+            }
+            
+            .menuItemName
+            {
+                /*border: 2px solid red;*/
+                margin: 0;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            
+            .menuItem:hover
+            {
+                border: 2px solid #151523;
+            }
+            
+            .AllContent
+            {
+                /*border: 2px solid red;*/
+                padding: 3rem; 
+            }
+            
+            .contentContainer
+            {
+                /*border: 2px solid purple;*/
+                margin-left: 3rem;
+                margin-right: 3rem; 
+                padding: 3rem;
+            }
+            
+            .contentName, .contentNameSubtext
+            {
+                /*border: 2px solid green;*/
+                margin: auto;
+                font-family: "futura";
+                font-size: 40px;
+                letter-spacing: 1.5px;
+                text-align: left;
+            }
+            
+            .contentNameSubtext
+            {
+                font-size: 13pt;
+                opacity: 0.6;
+            }
+            
+            .contentImgContainer
+            {
+                /*border: 2px solid blue;*/
+                margin-top: 1rem;
+                height: 500px;
+            }
+            
+            .placesOfIntHdr
+            {
+                font-family: "futura";
+                font-size: 15pt;
+                color: #151523;
+                letter-spacing: 1.5px;
+                list-style-type: none;
+            }
+            
+            .placesOfInt
+            {
+                text-align: center;
+                font-family: "baskerville";
+                font-size: 13pt;
+                color: #151523;
+                letter-spacing: 1px;
+                line-height: 30px;
+            }
+            
+            .contentTextCon
+            {
+                /*border: 2px solid green;*/
+                padding-right: 4rem;
+            }
+            
+            .contentTextSubHr
+            {
+                font-family: "futura";
+                font-size: 20pt;
+                text-align: left;
+                letter-spacing: 1.5px;
+            }
+            
+            .contentText
+            {
+                font-family: "baskerville";
+                font-size: 18pt;
+                letter-spacing: 1px;
+                text-align: left;
+            }
+            
+            .jumpLink
+            {
+                font-family: "futura";
+                font-size: 13pt;
+                letter-spacing: 1px;
+                text-decoration: none;
+            }
+            
+            .jumpLink:hover
+            {
+                text-decoration-line: underline;
+            }
+            
+            a
+            {
+                color: darkorange;
+            }
+            
+        </style>
+    </head>
+    
+    <body bgcolor="white">
+        <main>
+            <div><!--MAIN DIV-->
+                <section class="hero">
+                    <img src="destinations_banner.jpg" alt="Wangshu Inn" style="width:100%;">
+                    <div>
+                        <h1 class=heroTitle>DESTINATIONS</h1>
+                    </div>
+                    <div>
+                        <h5 class=heroSubtext>BREATHTAKING ANTIQUITY</h5>
+                    </div>
+                </section>
+        
+                <center>
+                <section class="menuContainer">
+                    <ul id="top" class="menu"> <!--ROW 1-->
+                        <li class="menuItem"> <!--COL 1-->
+                            <article>
+                                <a class="menuItemText" href="#lyharbour">
+                                    <img src="liyue_harbour_7.jpeg" alt="Liyue Harbour Architecture View" width="250" height="375">
+                                    <p class="menuItemSubText">
+                                        SEA OF CLOUDS
+                                    </p>
+                                    <p class="menuItemName">
+                                        LIYUE HARBOUR
+                                    </p>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="menuItem"> <!--COL 2-->
+                            <article>
+                                <a class="menuItemText" href="#hgstone">
+                                    <img src="huagang_stone_forest_icon.jpg" alt="Huagang Stone Forest" width="250" height="375">
+                                    <p class="menuItemSubText">
+                                        MINLIN
+                                    </p>
+                                    <p class="menuItemName">
+                                        HUAGANG STONE FOREST
+                                    </p>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="menuItem"> <!--COL 3-->
+                            <article>
+                                <a class="menuItemText" href="#luhua">
+                                    <img src="luhua_pool_icon1.jpg" alt="Luhua Pool" width="250" height="375">
+                                    <p class="menuItemSubText">
+                                        QIONGJI ESTUARY
+                                    </p>
+                                    <p class="menuItemName">
+                                        LUHUA POOL
+                                    </p>
+                                </a>
+                            </article>
+                        </li>
+                    </ul>
+                    
+                    <ul class="menu"> <!--ROW 2-->
+                        <li class="menuItem"> <!--COL 1-->
+                            <article>
+                                <a class="menuItemText" href="#qingce">
+                                    <img src="qingce_icon.jpg" alt="Qingce Village" width="250" height="375">
+                                    <p class="menuItemSubText">
+                                        BISHUI PLAIN
+                                    </p>
+                                    <p class="menuItemName">
+                                        QINGCE VILLAGE
+                                    </p>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="menuItem"> <!--COL 2-->
+                            <article>
+                                <a class="menuItemText" href="#dihua">
+                                    <img src="dihua_marsh_icon.jpg" alt="Dihua Marsh" width="250" height="375">
+                                    <p class="menuItemSubText">
+                                        BISHUI PLAIN
+                                    </p>
+                                    <p class="menuItemName">
+                                        DIHUA MARSH
+                                    </p>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="menuItem"> <!--COL 3-->
+                            <article>
+                                <a class="menuItemText" href="#guyun">
+                                    <img src="guyun_icon.jpg" alt="Guyun Stone Forest" width="250" height="375">
+                                    <p class="menuItemSubText">
+                                        SEA OF CLOUDS
+                                    </p>
+                                    <p class="menuItemName">
+                                        GUYUN STONE FOREST
+                                    </p>
+                                </a>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+                    
+                    <br>
+                    <hr size=2px width=65% align=center>
+                    
+                <section class="AllContent"> <!--ALL MENU ITEM CONTENT-->
+                    <div class="contentContainer" id="lyharbour">
+                        <p class="contentNameSubtext">
+                            SEA OF CLOUDS
+                        </p>
+                        <h1 class="contentName">LIYUE HARBOUR</h1>
+                        
+                        <section class="contentImgContainer">
+                            <img style="float:left" src= "liyue_harbour_6.jpg" alt="Liyue Harbour Architecture" height=500>
+                            <hr size 2px width=22% align=center>
+                            <ul class="placesOfInt">
+                                <h4 class="placesOfIntHdr">PLACES OF INTEREST</h4>
+                                <li>Liyue Port</li>
+                                <li>Baiju Guesthouse</li>
+                                <li>Xigu Antiques</li>
+                                <li>Wangsheng Funeral Parlour</li>
+                                <li>Mingxing Jewelry</li>
+                                <li>Scent of Spring</li>
+                                <li>Yuehai Pavillion</li>
+                                <li>Wanwen Bookhouse</li>
+                                <li>Bubu Pharmacy</li>
+                                <li>Jade Chamber</li>
+                            </ul>
+                            <br><br>
+                            <hr size 2px width=22% align=center>
+                        </section>
+                        <section class="contentTextCon">
+                            <h2 class=contentTextSubHr>A bountiful port city that lies in the east<br> of Teyvat where a thousand ships drop anchor. </h2>
+                            <article>
+                                <p class="contentText">
+                                    Under the aegis of countless contracts and regulations, innumerable goods change hands and grace the seven nations with their presence.
+                                    The establishment of the harbor kicked off Liyue's seafaring trade. As Teyvat's largest market harbor, the sheer amount of goods that flow to and from it is simply incomparable for other ports.<br><br>
+                                    Delicate specialty stores, featured snack stores and old style teahouses can be seen all over the town. Take your time to taste the local flavors, or just order a cup of tea and at the same time, watch performances from the famous Yun-Han Opera Troupe, or listen to the many storytellers weave classic, timeless folk tales.<br><br>
+                                    Every year during the <a href="events&festivals.html#lanternhighlight" >Lantern Rite</a>, you can see thousands of lanterns ascend into the night sky — a Liyue event that you can't afford to miss.
+                                </p>
+                                <br><br>
+                                <a class="jumpLink" href="#top">BACK TO TOP</a>
+                            </article>
+                        </section>
+                    </div>
+                    
+                    <hr size=2px width=65% align=center>
+                    
+                    
+                    <div class="contentContainer" id="hgstone">
+                        <p class="contentNameSubtext">
+                            MINLIN
+                        </p>
+                        <h1 class="contentName">HUAGANG STONE FOREST</h1>
+                        
+                        <section class="contentImgContainer">
+                            <img style="float:left" src= "huagang_stone_forest_3.jpg" alt="Huagang Stone Forest Sunset View" height=500>
+                            <hr size 2px width=22% align=center>
+                            <ul class="placesOfInt">
+                                <h4 class="placesOfIntHdr">PLACES OF INTEREST</h4>
+                                <li>Three Divine Birds Statues</li>
+                                <li>Qingyun Peak Floating Shrine</li>
+                                <li>Mist-Veiled Viewpoint</li>
+                                <li>Nantianmen</li>
+                                <li>Mt. Aocang Ruins</li>
+                                <li>Clear Pool and Mountain Cavern</li>
+                                <li>Mt. Hulao Amber Formations</li>
+                                <li>Mountain Shaper's Abode</li>
+                            </ul>
+                            <br><br>
+                            <hr size 2px width=22% align=center>
+                        </section>
+                        <section class="contentTextCon">
+                            <h2 class=contentTextSubHr>Stone spires emerge out<br> of the clouds like great pavilions.</h2>
+                            <article>
+                                <p class="contentText">
+                                    Such a beauteous sight is bound to attract the eyes of those who yearn for the sky, and for those who dwell in adepti realms. Huagang Stone Forest is a treasure place with the perfect combination of the idyllic beauty of Dihua Marsh, the strangeness of Wuwang Hill and the magnificence of Mt. Tianheng.
+                                    It is surrounded by three mountains: Mt. Aocang to the north, Mt. Hulao to the southwest and Qingyun Peak, the highest peak in Liyue, to the east <br><br>
+                                    If you are lucky enough, you may be able to witness the four wonders of Huagang Stone Forest: the Sea of Clouds, the Radiance of the Moonlight, Rays of Sunshine and the Snow in winter.
+                                </p>
+                                <br><br>
+                                <a class="jumpLink" href="#top">BACK TO TOP</a>
+                            </article>
+                        </section>
+                    </div>
+                    
+                    <hr size=2px width=65% align=center>
+                    
+                    <div class="contentContainer" id="luhua">
+                        <p class="contentNameSubtext">
+                            QIONGJI ESTUARY
+                        </p>
+                        <h1 class="contentName">LUHUA POOL</h1>
+                        
+                        <section class="contentImgContainer">
+                            <img style="float:left" src= "luhua_pool_7.jpeg" alt="Luhua Pool Forest View" height=500>
+                            <hr size 2px width=22% align=center>
+                            <ul class="placesOfInt">
+                                <h4 class="placesOfIntHdr">PLACES OF INTEREST</h4>
+                                <li>Vermeer Paintings</li>
+                                <li>Hidden Palace of Guizang</li>
+                                <li>The Twin Statue of Knights</li>
+                                <li>Guili Assembly</li>
+                                <li>Ancient Stone Tablets of Guili</li>
+                                <li>Yaoguang Shoal</li>
+                                <li>Heart Island</li>
+                                <li>Starconch Beach</li>
+                                <li>Mingyun Mining Village</li>
+                                <li>Hidden Palace of Lianshan</li>
+                            </ul>
+                            <br><br>
+                            <hr size 2px width=22% align=center>
+                        </section>
+                        <section class="contentTextCon">
+                            <h2 class=contentTextSubHr>Legend has it that a deep, pure affection filled this<br> ancient garden, creating the Luhua Pool as it is known today.</h2>
+                            <article>
+                                <p class="contentText">
+                                    Luhua Pool is famous for colorful travertine ponds, caves, waterfalls, streams, with a magnificent backdrop of wild forests.
+                                    It has 693 small ponds, which covers more than 21,000 square meters. The ponds here are well-arranged, very similar to the fields of Qingce Village. Looked from afar, the ponds are like many jade slices.<br><br>
+                                    You may also visit Vermeer Paintings, by famous Mondstadt painter Vermeer, where you can paint the scenic landscape right by the pools. If you aren't the artistic kind, you will also be able to purchase one of Vermeer's paintings as a souvenir.
+                                </p>
+                                <br><br>
+                                <a class="jumpLink" href="#top">BACK TO TOP</a>
+                            </article>
+                        </section>
+                    </div>
+                    
+                    <hr size=2px width=65% align=center>
+                    
+                    <div class="contentContainer" id="qingce">
+                        <p class="contentNameSubtext">
+                            BISHUI PLAIN
+                        </p>
+                        <h1 class="contentName">QINGCE VILLAGE</h1>
+                        
+                        <section class="contentImgContainer">
+                            <img style="float:left" src= "qingce_village_5.jpg" alt="Qingce Flower Fields" height=500>
+                            <hr size 2px width=22% align=center>
+                            <ul class="placesOfInt">
+                                <h4 class="placesOfIntHdr">PLACES OF INTEREST</h4>
+                                <li>Flower Fields of Qingce</li>
+                                <li>Community Center</li>
+                                <li>Pops Kai's Tea Shop</li>
+                                <li>Village Water Mill</li> 
+                                <li>Fanmu Carpenters</li>
+                                <li>Qingce Village Market</li>
+                                <li>Rex Lapis Pedestal Monuments</li>
+                                <li>Qingce Waterfall Cave</li>
+                                <li>West Village Shrine</li>
+                                <li>Wuwang Hill</li>
+                            </ul>
+                            <br><br>
+                            <hr size 2px width=22% align=center>
+                        </section>
+                        <section class="contentTextCon">
+                            <h2 class=contentTextSubHr>White rolling clouds in the valleys,<br>row upon row of crescent-moon water paddies.</h2>
+                            <article>
+                                <p class="contentText">
+                                    When the wind blows, the ripples in the water give off an array of colors. At the northernmost point of Liyue, hidden between the hills and the bamboo forests sits Qingce Village. Gently cradled by the mighty Mt. Qingce, it silently protects this peaceful village, the old, the young, and the abundant croplands within its embrace.<br><br>
+                                    Enjoy a break away from the bustling city. Appreciate freshly brewed teas at Pop Kai's Tea Shop, try your hand in crafting fine furnitures at Fanmu Carpenters, you may even volunteer at the Community Center to immerse in the daily life of the villagers - there are no lack of things to do in Qingce Village.
+                                </p>
+                                <br><br>
+                                <a class="jumpLink" href="#top">BACK TO TOP</a>
+                            </article>
+                        </section>
+                    </div>
+                    
+                    <hr size=2px width=65% align=center>
+                    
+                    <div class="contentContainer" id="dihua">
+                        <p class="contentNameSubtext">
+                            BISHUI PLAIN
+                        </p>
+                        <h1 class="contentName">DIHUA MARSH</h1>
+                        
+                        <section class="contentImgContainer">
+                            <img style="float:left" src= "dihua_marsh_5.jpg" alt="Dihua Marsh Fog" height=500>
+                            <hr size 2px width=22% align=center>
+                            <ul class="placesOfInt">
+                                <h4 class="placesOfIntHdr">PLACES OF INTEREST</h4>
+                                <li>Wangshu Inn</li>
+                                <li>Stone Gate</li>
+                                <li>Bishui River</li>
+                                <li>Sal Terrae Ancient Seal</li>
+                                <li>Sal Terrae Civilisation Cave</li>
+                                <li>Hypermarket</li>
+                                <li>Ridge Watch</li>
+                            </ul>
+                            <br><br>
+                            <hr size 2px width=22% align=center>
+                        </section>
+                        <section class="contentTextCon">
+                            <h2 class=contentTextSubHr>This is where the sifting of the wavy silvergrass<br> and the croaking of frogs join in song.</h2>
+                            <article>
+                                <p class="contentText">
+                                    Dihua Marsh, a wetland area north of Liyue, gets its name from the silvergrass ("dihua" in the local language) that grows in the shallows of the marsh.
+                                    The scrambling web of rivers has grown into a flourishing and wide-spread ecosystem full of flora and fauna — an awe-inspiring sight for travelers to the area.
+                                    <br><br>
+                                    The area also acts as the road from Mondstadt to Liyue, and as such many merchant caravans choose to stop here to rest. Wangshu Inn stands within the area, a symbolic structure from all direction. The view from the top of the inn is jaw-dropping — weather permitting, you can see all the way to Mt. Qingce and Jueyun Karst in the distance.
+                                </p>
+                                <br><br>
+                                <a class="jumpLink" href="#top">BACK TO TOP</a>
+                            </article>
+                        </section>
+                    </div>
+                    
+                    <hr size=2px width=65% align=center>
+                    
+                    <div class="contentContainer" id="guyun">
+                        <p class="contentNameSubtext">
+                            SEA OF CLOUDS
+                        </p>
+                        <h1 class="contentName">GUYUN STONE FOREST</h1>
+                        
+                        <section class="contentImgContainer">
+                            <img style="float:left" src= "guyun_2.jpg" alt="Guyun Stone Forest Area" height=500>
+                            <hr size 2px width=22% align=center>
+                            <ul class="placesOfInt">
+                                <h4 class="placesOfIntHdr">PLACES OF INTEREST</h4>
+                                <li>Guyun Stone Pillars</li>
+                                <li>Pillar of Light</li>
+                                <li>Domain of Guyun</li>
+                                <li>The Crux Clash Circle Stadium</li>
+                                <li>Guyun Buyers Club</li>
+                                <li>The Alcor</li>
+                            </ul>
+                            <br><br>
+                            <hr size 2px width=22% align=center>
+                        </section>
+                        <section class="contentTextCon">
+                            <h2 class=contentTextSubHr>Those sensitive of heart can sometimes hear a strange, <br>stirring rhythm emanating from deep within that oceanic abyss.</h2>
+                            <article>
+                                <p class="contentText">
+                                    The people of Liyue would say the the proud, lonely stone mountains of Guyun Stone Forest is more of a vista to behold than a place to physically visit. However, visitors from afar heed no such warnings.
+                                    Legend has it that this is where Rex Lapis once defeated a god and sea monster known as Osial, and the jagged cliffs protruding from the islands at Guyun are in fact the remnants of the stone lances he used in that battle. 
+                                    <br><br>     
+                                    An archipelago of seven large islands and smaller offshoots, on the southern islands you can find the Pillar of Light said to have been a marker for ancient ruins treasure. Anchored near the island is The Alcor, a warship of The Crux - an armed fleet famous throughout Liyue for their daring adventures and rich bounties.
+                                </p>
+                                <br><br>
+                                <a class="jumpLink" href="#top">BACK TO TOP</a>
+                            </article>
+                        </section>
+                    </div>
+                    
+                    </section>
+                    
+                </center>
+            </div>
+        </main>
+    </body>
+</html>

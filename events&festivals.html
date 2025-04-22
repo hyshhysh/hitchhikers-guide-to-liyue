@@ -1,0 +1,394 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Events & Festivals - Hitchhiker's Guide to Liyue</title>
+        <style>
+            .bannercontainer
+            {
+                position: relative;
+                text-align: center;
+                color: white;
+            }
+            
+            .bannertitle 
+            {
+                font-family: "futura";
+                font-size: 40pt;
+                font-weight: bold;
+                letter-spacing: 1.5pt;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .bannersubtitle
+            {
+                font-family: "futura";
+                font-size: 13pt;
+                font-weight: bold;
+                letter-spacing: 1.5pt;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            h4
+            {
+                font-family: "futura";
+                font-weight: bold;
+                letter-spacing: 1.5pt;
+                color: #151523;
+            }
+            
+            .fgrid
+            {
+                margin: auto;
+                width: 50%;
+                display: flex;
+                padding-bottom: 50px;
+            }
+            .fgridimg
+            {
+                float:left;
+                width: 33.33%;
+                padding: 5px;
+            }
+            
+            .fgridtext
+            {
+                font-family: "futura";
+                font-size: 10pt;
+                letter-spacing: 1px;
+                color: #151523;
+                text-decoration-line: none;
+            }
+            
+            .fgridimg:hover
+            {
+                border: 2px solid black;
+            }
+            
+            #lanternhighlight
+            {
+                background-image: url(lantern_rite_bg.webp);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-color: #151523;
+                color: whitesmoke;
+            }
+            
+            #lanternhighlightheading
+            {
+                padding-top: 30px;
+                color:whitesmoke;
+            }
+            
+            .ptext, .leftimgtext, .leftimgtext2, .rightimgtext
+            {
+                font-family: "Baskerville";
+                font-size: 12pt;
+                letter-spacing: 1px;
+            }
+            
+            .ptext
+            {
+                justify-content: center;
+                padding-left: 320px;
+                padding-right: 320px;
+            }
+            
+            .leftimg
+            {
+                float:left;
+                /*border: 2px solid red;*/
+                margin-left: 275px;
+                height: 250px;
+            }
+            
+            .leftimgtext
+            {
+                /*border: 2px solid yellow;*/
+                margin-left: 525px;
+                margin-right: 275px;
+                margin-top: 80px;
+                padding-left: 40px;
+                height: 250px;
+            }
+            
+            .imgtxtheading
+            {
+                font-family: "futura";
+                font-size: 12pt;
+                color: whitesmoke;
+            }
+            
+            .rightimg
+            {
+                float:right;
+                /*border: 2px solid red;*/
+                margin-right: 275px;
+                height: 250px;
+            }
+            
+            .rightimgtext
+            {
+                /*border: 2px solid yellow;*/
+                margin-right: 525px;
+                margin-left: 275px;
+                margin-top: 0px;
+                padding-right: 40px;
+                height: 250px;
+            }
+            
+            .leftimgtext2
+            {
+                /*border: 2px solid yellow;*/
+                margin-left: 525px;
+                margin-right: 275px;
+                margin-top: 0px;
+                padding-left: 40px;
+                height: 250px;
+            }
+            
+            table,td,th
+            {
+                border:1px solid gray;
+                border-collapse: collapse;
+                padding: 15px;
+                font-family: "baskerville";
+                font-size: 16px;
+                letter-spacing: 1px;
+                color: whitesmoke;
+            }
+            
+            .reglink
+            {
+                color:darkorange;
+                text-decoration-line: none;
+                font-family: "futura"
+            }
+            
+            .reglink:hover
+            {
+                text-decoration-line: underline;
+                color:darkorange;
+            }
+      
+        </style>
+    </head>
+    
+    <body id="pagetop">
+        <div> <!--MAIN DIV-->
+            <div class="bannercontainer">
+                <img src="lantern_rite_1.jpg" alt="Releasing Xiao Lanterns" style="width:100%;">
+                <div class="bannersubtitle">
+                    BRILLIANT LIGHTS, MELODIOUS RITES
+                </div>
+                <div class="bannertitle">
+                    EVENTS & FESTIVALS
+                </div>
+            </div>
+        
+            <center>
+                <br><br>
+                <div class="fgrid"> <!--FESTIVALS 3 GRID-->
+                    <div class="fgridimg"> <!--GRID 1-->
+                        <a class="fgridtext" href="#lanternhighlight">
+                            <img src="lantern_rite_2.jpg" alt="Colorful Round Hanging Lanterns" width="200" height="200">
+                            <div><br>LANTERN RITE FESTIVAL</div>
+                        </a>
+                    </div>
+                    <div class="fgridimg"> <!--GRID 2-->
+                        <a class="fgridtext" href="#moonchasedesc">
+                            <img src="moonchase_1.jpg" alt="Full Moon Over the Roof" width="200" height="200">
+                            <div><br>MOONCHASE FESTIVAL</div>
+                        </a>
+                    </div>
+                    <div class="fgridimg"> <!--GRID 3-->
+                        <a class="fgridtext" href="#riteofdescensiondesc">
+                            <img src="riteofdescension_1.jpg" alt="Incense Burner Outside a Temple" width="200" height="200">
+                            <div><br>RITE OF DESCENSION</div>
+                        </a>
+                    </div>
+                </div>
+            
+                <h4>HAPPENING NOW</h4>
+                <div id="lanternhighlight"><!--LANTERN RITE HIGHLIGHT-->
+                    <section>
+                        <h4 id="lanternhighlightheading"><br>LANTERN RITE FESTIVAL<br>
+                            <small><font color=darkorange>19/01/2023 - 06/02/2023</font></small></h4>
+                        <p class="ptext">
+                            On the day of the first full moon each year, the people of Liyue celebrate Lantern Rite. At nighttime, everyone in Liyue releases Xiao Lanterns and the Mingxiao Lantern into the bright night sky. People hang wish sticks from them, which carry their hearts' desires in written or painted form. The lanterns slowly fly away, carrying the hope that the light they emit might guide the souls of Liyue's faithful protectors home, that they might return and be reunited with their people once more. 
+                            <br><br>
+                        </p>
+                    
+                        <iframe width="1000" height="562.5" src="https://www.youtube.com/embed/2kY4raFWXtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </section>
+                    
+                    <section>
+                        <div class="leftimg"><img src="mingxiao_lantern.jpg" alt="Seagazer Mingxiao Lantern" width=250 height=250>
+                        </div>
+                        <div class="leftimgtext">
+                            
+                            <article>
+                               <h4 class=imgtxtheading>BRIGHT LANTERNS</h4> 
+                                Every year, one fallen hero from Liyue's history is selected as the subject of the Lantern Rite's Mingxiao Lantern — a massive lantern constructed from materials donated by citizens and visitors alike. Seagazer is this year's featured adepti, and you can see the giant structure shaped in his likeliness right in the middle of the stage along Harbour Street. 
+                                <br>
+                                When the sun goes down, stroll through the streets of Liyue Harbour adorned with brightly lit lantern decorations of all shapes and sizes, and immerse yourself in the festive cheer.
+                            </article>
+                        </div>
+                        <hr color=whitesmoke size=1px width=70% align=center>
+                    
+                        <div class="rightimg"><img src="radiant_sparks.jpg" alt="Brilliant Fireworks Nightsky" width=250 height=250>
+                        </div>
+                        <div class="rightimgtext">
+                            
+                            <article>
+                               <h4 class=imgtxtheading>RADIANT SPARKS</h4> 
+                                Thrill-seekers, look here! Organised by the Adventurer's Guild, every challenge track in Radiant Sparks is carefully designed by Tiantian the Recruiter. Dash forward using the fireworks' propulsion and enjoy the thrill of extreme speed and the beauty of flickering sparks. You can also hone your skills with the Wind Glider here. This is an experience not to be missed!
+                                <br><br>
+                                <i>*Note that a Wind Gliding License will be required for this activity</i>
+                                <br><br>
+                            </article>
+                        </div>
+                        <hr color=whitesmoke size=1px width=70% align=center>
+                        
+                
+                        <div class="leftimg"><img src="paper_theatre.jpg" alt="Paper Puppet Lovers" width=250 height=250>
+                        </div>
+                        <div class="leftimgtext2">
+                            
+                            <article>
+                               <h4 class=imgtxtheading>PAPER THEATRE</h4> 
+                                A man's melancholic yearning, adepti and demons, and a heartfelt romance played out with paper. Catch the Liyue classic tale "The Valiant Bearded Hero" every night presented by Yinggong of the esteemed Yun-Han Opera Troupe. Marvel at the intricate paper actors playing out the story from behind a paper screen.
+                                <br>
+                                For the first time ever, become part of the story and *try your hand at playing the puppets yourself! 
+                                <br><br>
+                                <i>*Limited slots per night</i>
+                            </article>
+                        </div>
+                        <hr color=whitesmoke size=1px width=70% align=center>
+            
+                        <div class="rightimg"><img src="blaze_lilies.jpg" alt="The Blaze Lillies" width=250 height=250>
+                        </div>
+                        <div class="rightimgtext">
+                            
+                            <article>
+                               <h4 class=imgtxtheading>IRIDESCENCE TOUR:<br>LANTERN RITE GRAND CONCERT</h4> 
+                                The first to be held outside Fontaine, the Iridescence Tour is coming to Liyue! The famous music festival is sure to excite your senses with a special collaborative performance by Liyue's very own Xinyan and Hu Tao! Collectively known as The Blaze Lillies, their unique fusion of Rock and Rap infused with traditional Liyue sounds will set your heart ablaze.
+                                <br>
+                                Dvorak, the organizer hailing all the way from Fontaine, will also conduct orchestral pieces of Liyue's traditional music.
+                                <br><br>
+                            </article>
+                        </div>
+                        <br><br><br>
+                        
+                        <h4 class=imgtxtheading>EVENT CALENDAR</h4>
+                        <table width=50%>
+                            <tr>
+                                <th>EVENT</th>
+                                <th>DATE</th>
+                                <th>DETAILS</th>
+                                
+                            </tr>
+                            <tr>
+                                <td>Lighting Up of Mingxiao Lantern</td>
+                                <td>19/01/2023<br><br>6PM</td>
+                                <td>Catch the lighting up ceremony of this year's Mingxiao Lantern, created in honour of adeptus Seagazer!</td>
+                            </tr>
+                            <tr>
+                                <td>Radiant Sparks</td>
+                                <td>19/01/2023 to 05/02/2023<br><br>5.30PM-12AM</td>
+                                <td>Soar through the skies with the fireworks and enjoy a bird's eye view of a Liyue Harbour adorned with Lanterns!
+                                <br><br>
+                                    Click <a class="reglink" href="regform.html">here</a> to register*!
+                                <br><br>
+                                <small><i>*Wind Glider license required.</i></small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Paper Theatre</td>
+                                <td>19/01/2023 to 05/02/2023<br><br>5PM-10.30PM</td>
+                                <td>Catch a paper puppet show and learn how to pull the strings from behind the scenes!
+                                <br><br>
+                                    Click <a class="reglink" href="regform.html">here</a> to register*!
+                                <br><br>
+                                <small><i>*Limited slots available per night</i></small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Vigilance at Sea</td>
+                                <td>19/01/2023 to 06/02/2023<br><br>5.30PM-12AM</td>
+                                <td>Watch the Crux fleet conducting training tests as they sail their Waveriders to complete various obstacle courses and games.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Genius Invokation: Lantern Rite Tourno</td>
+                                <td>25/01/2023 to 28/01/2023<br><br>9AM-5PM</td>
+                                <td>A three day casual tournament featuring special guests from other regions fighting for the Champion title.
+                                <br>Day 1: Qualifying Rounds
+                                <br>Day 2: Round-robin
+                                <br>Day 3: Championship Finals
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Dance Culture Sharing</td>
+                                <td>01/02/2023 to 02/02/2023<br><br>12PM to 3PM</td>
+                                <td>Nilou from Sumeru, Yunjin fron Liyue and Barbara from Mondstadt will be co-conducting dance culture sharing sessions over two days at Heyu Tea House.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>It's Raining Fireworks</td>
+                                <td>19/01/2023 to 05/02/2023<br><br>7PM-11PM</td>
+                                <td>The starry sky over Liyue harbour will be illuminated by colorful fireworks at 45 min intervals.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Iridescence Tour: Lantern Rite Grand Concert</td>
+                                <td>05/02/2023<br><br>8PM-11PM</td>
+                                <td>Catch musical performances by The Blaze Lillies and Dvorak from Fontaine as part of the first overseas Iridescence Tour.<br><br>
+                                Click <a class="reglink" href="regform.html">here</a> to register!
+                                </td>
+                            </tr>
+                        </table>
+                        <br><br><br>
+        
+                    </section>
+                </div>
+
+                <br><br><br>
+                <h4>UPCOMING FESTIVALS</h4><!--OTHER FESTIVALS-->
+                <br><br>
+                <div class="leftimg" id="moonchasedesc"><img src="moonchase_2.jpeg" alt="Mooncakes and Tea" width=250 height=250>
+                        </div>
+                        <div class="leftimgtext2">
+                            
+                            <article>
+                            <h4 class=imgtxtheading><font color=#151523>MOONCHASE FESTIVAL</font></h4> 
+                                In ancient times, the people of Liyue paid tribute to the Stove God, Marchosius, termed the "Stove God Festival". <br>
+                                The Moonchase Festival celebrates the arrival of fall by moonlight, which is said to be the time of year when the adepti would seek "the Way" thousands of years ago.
+                                <br>
+                                These festivals would later be unified under the Moonchase name to honor and commemorate Marchosius. In modern times, the Moonchase Festival is seen as a time for the people of Liyue to reunite with friends and family, have feasts and enjoy themselves.
+                            </article>
+                        </div>
+                    <br>
+                    <div class="leftimg" id="riteofdescensiondesc"><img src="yujing_terrace.jpg" alt="Yujing Terrace Courtyard" width=250 height=250>
+                        </div>
+                        <div class="leftimgtext2">
+                            
+                            <article>
+                            <h4 class=imgtxtheading><font color=#151523>RITE OF DESCENSION</font></h4> 
+                                Liyue is a land by the sea, Liyue Harbour a city that sits atop the solid bedrock. Under the protection of its guardian Morax — also known as "Rex Lapis," it has flourished. On the annual "Rite of Descension", Rex Lapis graces this land with his prophecy, giving guidance on the economic path Liyue should follow in the coming year.
+                            </article>
+                        </div>
+                        <br><br><br>
+                <a class="reglink" href="#pagetop">BACK TO TOP</a>
+            </center>
+            <br><br><br>
+
+        </div>
+    </body>
+    
+</html>
